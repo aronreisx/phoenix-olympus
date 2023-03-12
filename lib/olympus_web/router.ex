@@ -7,6 +7,8 @@ defmodule OlympusWeb.Router do
 
   scope "/api", OlympusWeb do
     pipe_through :api
+
+    get "/imc", IMCController, :index
   end
 
   # Enables LiveDashboard only for development
